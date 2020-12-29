@@ -1,0 +1,26 @@
+{
+  "name": "ui-kit",
+  "version": "1.0.0",
+  "description": "figma to custom tailwind css",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss assets/css/style.css -o assets/css/compiled.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhadnawab/ui-kit.git"
+  },
+  "author": "farhadnawab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farhadnawab/ui-kit/issues"
+  },
+  "homepage": "https://github.com/farhadnawab/ui-kit#readme",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
