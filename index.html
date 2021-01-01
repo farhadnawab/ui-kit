@@ -22,7 +22,27 @@
     </head>
 <body>
   <!-- Header Top -->
-  <div class="mytop-header border-b bg-white fixed top-0 w-screen transform-none h-14 Fixed"></div>
+  <div class="mytop-header border-b bg-white fixed top-0 w-screen transform-none h-14 Fixed">
+    <div class="flex justify-between items-center">
+      <div class="logo">
+        <a href="#">
+          <img src="http://placehold.it/200x40" alt="">
+        </a>
+      </div>
+
+      <div class="company-logo">
+        <a href="#">
+          <img src="http://placehold.it/200x40" alt="">
+        </a>
+      </div>
+
+      <div class="header-links">
+        <a href="#">
+          <img src="http://placehold.it/200x40" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Page Header -->
   <div id="page" class="border-l">
@@ -37,23 +57,23 @@
       
       <div class="header-right ml-auto absolute top-0 my-3 right-12">
         <ul class="m-0 p-0 flex items-center">
-          <li class="inline-block mx-4">
+          <li class="inline-block mx-4 relative">
             <a href="#!">
               <i class="feather-search"></i>
             </a>
             <form class="hdr-frm" id="hdr-frm">
-              <button type="submit" class="hdr-submit">
+              <button type="submit" class="hdr-submit absolute top-0 left-2 bg-transparent cursor-pointer h-8 text-gray-500 text-lg">
                 <i class="feather-search"></i>
               </button>
               <input type="text" name="header-search" placeholder="Search Part">
             </form>
           </li>
-          <li class="inline-block mx-4">
+          <li class="inline-block mx-4 relative">
             <a href="#!">
               <i class="feather-info"></i>
             </a>
           </li>
-          <li class="inline-block mx-4 mr-0">
+          <li class="inline-block mx-4 relative mr-0">
             <a href="#!">
               <i class="feather-message-square"></i>
             </a>
