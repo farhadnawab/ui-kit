@@ -76,7 +76,11 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            textColor: ['visited', 'disabled'],
+            backgroundColor: ['visited', 'disabled'],
+            borderColor: ['visited', 'disabled']
+        },
     },
     plugins: [],
     important: true

@@ -130,6 +130,29 @@ nav:not(.mm-menu) {
     @apply px-3 text-xs leading-4 text-white font-normal inline-block rounded-3xl;
 }
 
+
+/* BUTTONS */ 
+.btn-secondary {
+    @apply bg-gray-100 text-gray-900 border border-gray-300 hover:bg-gray-300 font-semibold px-4 h-10 rounded-sm disabled:bg-gray-200 disabled:text-gray-400 border disabled:border-gray-300 focus:outline-none focus:shadow-sm;
+}
+
+.btn-tertiary {
+    @apply bg-gray-100 text-blue-500 border border-gray-300 hover:border-blue-500 hover:bg-blue-100 font-semibold px-4 h-10 rounded-sm disabled:bg-gray-200 disabled:text-gray-400 border disabled:border-gray-300 focus:outline-none focus:shadow-sm;
+}
+
+.btn-ghost {
+    @apply border border-transparent disabled:text-gray-400 hover:bg-gray-300 font-semibold px-4 h-10 rounded-sm;
+}
+
+.btn-primary {
+    @apply bg-blue-500 border border-transparent hover:bg-blue-750 text-white px-4 h-10 rounded-sm disabled:bg-gray-200 disabled:text-gray-400 disabled:border-gray-300;
+}
+
+.btn-danger {
+
+}
+
+
 #menu {
     padding-top: 68px;
 }
