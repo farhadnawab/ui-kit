@@ -13,3 +13,5 @@ new Mmenu(document.querySelector("#menu"), {
     setSelected: { hover: !0, parent: !0 },
     sidebar: { collapsed: { use: 768, hideNavbar: !0, hideDivider: !0 }, expanded: { use: 10440, initial: "remember" } },
 });
+
+feather.replace({ 'stroke-width': 1.5 })
