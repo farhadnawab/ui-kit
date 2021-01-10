@@ -282,7 +282,8 @@ module.exports = {
         extend: {
             textColor: ['visited', 'disabled', 'active'],
             backgroundColor: ['visited', 'disabled', 'active'],
-            borderColor: ['visited', 'disabled', 'active']
+            borderColor: ['visited', 'disabled', 'active'],
+            placeholderColor: ['disabled']
         },
     },
     plugins: [],

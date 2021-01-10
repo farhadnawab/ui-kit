@@ -26,30 +26,76 @@
         <h2 class="font-bold text-xl text-gray-900 my-4 border-b border-gray-100">Input Text</h2>
         
         <div class="mb-6">
-            <div class="mb-2">
-                <input type="text" class="h-10 px-3 py-2 bg-white w-64 border border-gray-100 focus:border-blue-250 focus:outline-none hover:bg-gray-50 rounded-sm text-base text-black placeholder-gray-300" placeholder="Enter name">
+            <div class="input-lg-text-only mb-2">
+                <input type="text" class="input" placeholder="Enter name">
             </div>
 
-            <div class="mb-2">
-                <input type="text" class="h-10 px-3 py-2 bg-gray-50 w-64 border border-gray-100 rounded-sm text-base text-gray-200" disabled placeholder="Enter name">
+            <div class="input-lg-icon-left mb-2">
+                <span class="left"><i data-feather="search" class="icon"></i></span>
+                <input type="text" class="input" placeholder="Enter name">
             </div>
 
+            <div class="input-lg-icon-right mb-2">
+                <input type="text" class="input" placeholder="Enter name">
+                <span class="right"><i data-feather="search" class="icon"></i></span>
+            </div>
+
+            <div class="input-lg-icon-right-right mb-2">
+                <input type="text" class="input" placeholder="Enter name">
+                <span class="right">
+                    <i data-feather="info" class="icon"></i>
+                    <i data-feather="x" class="icon"></i>
+                </span>
+            </div>
+
+            <div class="input-lg-icon-left-right mb-2">
+                <span class="left"><i data-feather="search" class="icon"></i></span>
+                <input type="text" class="input" placeholder="Enter name">
+                <span class="right"><i data-feather="x" class="icon"></i></span>
+            </div>
+
+            <div class="input-lg-text-only mb-2">
+                <input type="text" class="input" placeholder="Enter name" disbled>
+            </div>
         </div>
 
 
         <h2 class="font-bold text-xl text-gray-900 mt-12 mb-4 border-b border-gray-100">Input Error</h2>
         
         <div class="mb-6">
-            <div class="mb-2">
-                <input type="text" class="h-10 px-3 py-2 bg-white w-64 border border-red-600 focus:border-red-600 hover:border-red-600 focus:outline-none hover:bg-gray-50 rounded-sm text-base text-black placeholder-gray-300" placeholder="Enter name">
+            <div class="input-lg-text-only error mb-2">
+                <input type="text" class="input" placeholder="Enter name">
             </div>
 
-            <div class="mb-2">
-                <input type="text" class="h-10 px-3 py-2 bg-gray-50 w-64 border border-gray-100 rounded-sm text-base text-gray-200" disabled placeholder="Enter name">
+            <div class="input-lg-icon-left error mb-2">
+                <span class="left"><i data-feather="search" class="icon"></i></span>
+                <input type="text" class="input" placeholder="Enter name">
             </div>
 
+            <div class="input-lg-icon-right error mb-2">
+                <input type="text" class="input" placeholder="Enter name">
+                <span class="right"><i data-feather="search" class="icon"></i></span>
+            </div>
+
+            <div class="input-lg-icon-right-right error mb-2">
+                <input type="text" class="input" placeholder="Enter name">
+                <span class="right">
+                    <i data-feather="info" class="icon"></i>
+                    <i data-feather="x" class="icon"></i>
+                </span>
+            </div>
+
+            <div class="input-lg-icon-left-right error mb-2">
+                <span class="left"><i data-feather="search" class="icon"></i></span>
+                <input type="text" class="input" placeholder="Enter name">
+                <span class="right"><i data-feather="x" class="icon"></i></span>
+            </div>
+
+            <div class="input-lg-icon-right error mb-2">
+                <input type="text" class="input" placeholder="Enter name" disabled>
+                <span class="right"><i data-feather="search" class="alert"></i></span>
+            </div>
         </div>
-
 
 
     </div>
