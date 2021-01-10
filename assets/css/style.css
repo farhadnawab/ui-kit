@@ -147,24 +147,24 @@ nav:not(.mm-menu) {
 }
 
 .btn-md {
-    @apply btn border font-semibold text-sm px-4 h-8 min-w-8 rounded-sm;
+    @apply btn border text-md font-semibold px-4 h-8 min-w-8 rounded-sm;
 }
 .btn-md > svg {
     @apply h-3.5;
 }
 
 .btn-sm {
-    @apply btn border font-semibold px-4 h-6 min-w-6 rounded-sm;
+    @apply btn border text-sm font-semibold px-3 h-6 min-w-6 rounded-sm;
 }
 .btn-sm > svg {
-    @apply h-3;
+    @apply h-3 w-3.5;
 }
 
 .btn-xsm {
-    @apply btn border font-semibold px-4 h-5 min-w-5 rounded-sm;
+    @apply btn border text-xsm font-semibold px-2 h-5 min-w-5 rounded-sm;
 }
 .btn-xsm > svg {
-    @apply h-2.5;
+    @apply h-3.5 w-3.5;
 }
 
 .btn-primary {
@@ -237,7 +237,7 @@ nav:not(.mm-menu) {
 
 .btn-primary-md-icon-right {
     @apply btn-md btn-primary;
-    padding-left:4px !important;
+    padding-right:4px !important;
 }
 
 .btn-primary-md-icon-left {
@@ -253,7 +253,7 @@ nav:not(.mm-menu) {
 }
 
 .btn-primary-sm-icon-only {
-    @apply btn-sm btn-primary;
+    @apply btn-sm btn-primary w-6;
     border-radius:50% !important;
     padding-left:0 !important;
     padding-right:0 !important;
@@ -277,7 +277,7 @@ nav:not(.mm-menu) {
 }
 
 .btn-primary-xsm-icon-only {
-    @apply btn-xsm btn-primary;
+    @apply btn-xsm btn-primary w-5;
     border-radius:50% !important;
     padding-left:0 !important;
     padding-right:0 !important;
@@ -656,15 +656,15 @@ nav:not(.mm-menu) {
 }
 
 .input-md {
-    @apply input-type h-10 px-3 py-2 text-base;
+    @apply input-type h-8 px-3 py-2 text-md;
 }
 
 .input-sm {
-    @apply input-type h-10 px-3 py-2 text-base;
+    @apply input-type h-6 px-3 py-2 text-sm;
 }
 
 
-
+/* INPUT LG */
 .input-lg-text-only .input{
     @apply input-lg;
 }
@@ -690,11 +690,79 @@ nav:not(.mm-menu) {
     padding-right:32px !important;
 }
 
+
+/* INPUT MD */
+
+.input-md-text-only .input{
+    @apply input-md;
+}
+
+.input-md-icon-left .input{
+    @apply input-md;
+    padding-left:28px !important;
+}
+
+.input-md-icon-right .input{
+    @apply input-md;
+    padding-right:28px !important;
+}
+
+.input-md-icon-right-right .input{
+    @apply input-md pr-12;
+    padding-right:48px !important;
+}
+
+.input-md-icon-left-right .input {
+    @apply input-md;
+    padding-left:28px !important;
+    padding-right:28px !important;
+}
+
+
+
+/* INPUT SM */
+
+.input-sm-text-only .input{
+    @apply input-sm;
+}
+
+.input-sm-icon-left .input{
+    @apply input-sm;
+    padding-left:22px !important;
+}
+
+.input-sm-icon-right .input{
+    @apply input-sm;
+    padding-right:22px !important;
+}
+
+.input-sm-icon-right-right .input{
+    @apply input-sm pr-12;
+    padding-right:38px !important;
+}
+
+.input-sm-icon-left-right .input {
+    @apply input-sm;
+    padding-left:22px !important;
+    padding-right:22px !important;
+}
+
+
 .input-lg-text-only,
 .input-lg-icon-left,
 .input-lg-icon-right,
 .input-lg-icon-right-right,
-.input-lg-icon-left-right {
+.input-lg-icon-left-right,
+.input-md-text-only,
+.input-md-icon-left,
+.input-md-icon-right,
+.input-md-icon-right-right,
+.input-md-icon-left-right,
+.input-sm-text-only,
+.input-sm-icon-left,
+.input-sm-icon-right,
+.input-sm-icon-right-right,
+.input-sm-icon-left-right  {
     @apply relative;
 }
 
@@ -704,32 +772,83 @@ nav:not(.mm-menu) {
     @apply absolute left-3 top-3  flex items-center justify-start;
 }
 
+.input-md-icon-left .left,
+.input-md-icon-left-right .left  {
+    @apply absolute left-2 top-2 flex items-center justify-start;
+}
+
+.input-sm-icon-left .left,
+.input-sm-icon-left-right .left {
+    @apply absolute left-1 top-1 flex items-center justify-start;
+}
+
 .input-lg-icon-right .right,
 .input-lg-icon-right-right .right,
-.input-lg-icon-left-right .right{
+.input-lg-icon-left-right .right {
     @apply absolute right-3 top-3 flex items-center justify-end;
+}
+
+.input-md-icon-right .right,
+.input-md-icon-right-right .right,
+.input-md-icon-left-right .right {
+    @apply absolute right-2 top-2 flex items-center justify-end;
+}
+
+.input-sm-icon-right .right,
+.input-sm-icon-right-right .right,
+.input-sm-icon-left-right .right {
+    @apply absolute right-1 top-1 flex items-center justify-end;
 }
 
 .input-lg-icon-left .left .icon, .input-lg-icon-left .left > svg,
 .input-lg-icon-left-right .left .icon, .input-lg-icon-left-right .left > svg,
 .input-lg-icon-right .right .icon, .input-lg-icon-right .right > svg,
 .input-lg-icon-right-right .right .icon, .input-lg-icon-right-right .right > svg,
-.input-lg-icon-left-right .right .icon, .input-lg-icon-left-right .right > svg{
+.input-lg-icon-left-right .right .icon, .input-lg-icon-left-right .right > svg,
+.input-md-icon-left .left .icon, .input-md-icon-left .left > svg,
+.input-md-icon-left-right .left .icon, .input-md-icon-left-right .left > svg,
+.input-md-icon-right .right .icon, .input-md-icon-right .right > svg,
+.input-md-icon-right-right .right .icon, .input-md-icon-right-right .right > svg,
+.input-md-icon-left-right .right .icon, .input-md-icon-left-right .right > svg,
+.input-sm-icon-left .left .icon, .input-sm-icon-left .left > svg,
+.input-sm-icon-left-right .left .icon, .input-sm-icon-left-right .left > svg,
+.input-sm-icon-right .right .icon, .input-sm-icon-right .right > svg,
+.input-sm-icon-right-right .right .icon, .input-sm-icon-right-right .right > svg,
+.input-sm-icon-left-right .right .icon, .input-sm-icon-left-right .right > svg{
     @apply w-4 h-4;
 }
+
 
 .input-lg-text-only.error .input,
 .input-lg-icon-left.error .input,
 .input-lg-icon-right.error .input,
 .input-lg-icon-right-right.error .input,
-.input-lg-icon-left-right.error .input {
+.input-lg-icon-left-right.error .input,
+.input-md-text-only.error .input,
+.input-md-icon-left.error .input,
+.input-md-icon-right.error .input,
+.input-md-icon-right-right.error .input,
+.input-md-icon-left-right.error .input,
+.input-sm-text-only.error .input,
+.input-sm-icon-left.error .input,
+.input-sm-icon-right.error .input,
+.input-sm-icon-right-right.error .input,
+.input-sm-icon-left-right.error .input {
     @apply input-error;
 }
 
 .input-lg-icon-left.error .icon, .input-lg-icon-left.error svg,
 .input-lg-icon-right.error .icon, .input-lg-icon-right.error svg,
 .input-lg-icon-right-right.error .icon, .input-lg-icon-right-right.error svg,
-.input-lg-icon-left-right.error .icon, .input-lg-icon-left-right.error svg {
+.input-lg-icon-left-right.error .icon, .input-lg-icon-left-right.error svg,
+.input-md-icon-left.error .icon, .input-md-icon-left.error svg,
+.input-md-icon-right.error .icon, .input-md-icon-right.error svg,
+.input-md-icon-right-right.error .icon, .input-md-icon-right-right.error svg,
+.input-md-icon-left-right.error .icon, .input-md-icon-left-right.error svg,
+.input-sm-icon-left.error .icon, .input-sm-icon-left.error svg,
+.input-sm-icon-right.error .icon, .input-sm-icon-right.error svg,
+.input-sm-icon-right-right.error .icon, .input-sm-icon-right-right.error svg,
+.input-sm-icon-left-right.error .icon, .input-sm-icon-left-right.error svg {
     @apply text-red-600;
 }
 
